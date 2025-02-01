@@ -19,7 +19,7 @@ interface:
   termsOfService:
     externalUrl: 'https://librechat.ai/tos'
     openNewTab: true
-    modalAcceptance: false
+    modalAcceptance: true
     modalTitle: "Terms of Service for LibreChat"
     modalContent: |
       # Terms and Conditions for LibreChat
@@ -144,8 +144,8 @@ endpoints:
       baseURL: 'https://openrouter.ai/api/v1'
       models:
         default: ['meta-llama/llama-3-70b-instruct']
-        fetch: true
-      titleConvo: true
+        fetch: false
+      titleConvo: false
       titleModel: 'meta-llama/llama-3-70b-instruct'
       # Recommended: Drop the stop parameter from the request as Openrouter models use a variety of stop tokens.
       dropParams: ['stop']
